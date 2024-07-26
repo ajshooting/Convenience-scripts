@@ -1,0 +1,17 @@
+// a*b-window
+//@param1:a 'height' 2 1 10 5 1
+//@param2:b 'width' 2 1 10 5 1
+//@param3:x 'position' 1 1 100 30 1
+
+(bg_img=input_ismaster() ? -2 : input_track(0)) ? (
+ gfx_a2=0;
+ gfx_blit(bg_img,1);
+ gfx_mode = 256;
+ gfx_a=0.99;
+ x -= 1;
+ 
+ gfx_blit(0,1,
+   project_w*(((x%b))/b), project_h*(((x/b)%a)/a), // posi
+   project_w* (1.0/b),project_h*(1.0/a) // wh
+  );
+ );
