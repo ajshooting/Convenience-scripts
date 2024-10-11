@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Twitter_icon_changer",
+    "version": "1.0",
+    "description": "change",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs",
+        "<all_urls>",
+        "webNavigation"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://twitter.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    }
+}
