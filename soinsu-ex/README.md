@@ -1,3 +1,3 @@
 # soinsu
 
-Chrome extension that displays prime factorization of numbers in a page
+ページ上の数字をすべて素因数分解するchrome拡張機能
